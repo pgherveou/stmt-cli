@@ -1,0 +1,22 @@
+{
+  "name": "stmt-cli",
+  "version": "0.1.0",
+  "description": "Statement-store CLI: stream statements from a topic over RPC",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "stmt-cli": "./src/index.ts"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@novasamatech/sdk-statement": "0.6.0",
+    "polkadot-api": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  }
+}
